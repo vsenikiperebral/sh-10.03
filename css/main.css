@@ -142,7 +142,7 @@ h2::after {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
@@ -235,7 +235,7 @@ h3 {
   padding: 100px 0;
 }
 .hero__text {
-  width: 600px;
+  width: 620px;
   margin-bottom: 80px;
   text-align: left;
 }
@@ -246,6 +246,9 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.hero__p {
+  font-size: 22px;
 }
 
 .hero__button {

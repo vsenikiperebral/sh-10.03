@@ -16,15 +16,16 @@
     padding: 100px 0;
   }
   &__text {
-    width: 600px;
-    // margin-left: 100px;
-    // margin-right: 20px;
+    width: 620px;
     margin-bottom: 80px;
     text-align: left;
   }
   &__audio-text-btn {
     display: flex;
     justify-content: space-between;
+  }
+  &__p {
+  font-size: 22px;
   }
 }
 
