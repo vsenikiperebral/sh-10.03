@@ -76,7 +76,6 @@ p {
 
 .container {
   display: block;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -250,12 +249,13 @@ h3 {
 }
 
 .hero__button {
-  height: 60px;
-  padding-left: 32px;
-  padding-right: 32px;
+  display: inline-block;
+  height: 70px;
+  min-width: 130px;
+  padding-left: 36px;
+  padding-right: 36px;
   padding-top: 16px;
   padding-bottom: 16px;
-  min-width: 130px;
   color: #ffffff;
   background-color: #fa9494;
   border: 1px solid rgba(0, 0, 0, 0.8);
