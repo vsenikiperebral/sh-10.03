@@ -1,0 +1,31 @@
+.hero {
+  background-image: url("../images/hero-bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1320px;
+  }
+  &__img-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+  }
+  &__text {
+    width: 600px;
+    // margin-left: 100px;
+    // margin-right: 20px;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+  &__audio-text-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+

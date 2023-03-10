@@ -1,17 +1,20 @@
 .header {
   background-color: $ptxc;
-&__nav {
+
+  &__nav {
     display: flex;
     align-items: center;
-}
-&__donations {
-    display: flex;
-}
+  }
 
+  &__donations {
+    display: flex;
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
+  }
 
   &__logo-blue {
     color: #0f6bd0;
-
     font-family: Aleo, serif;
     font-weight: 700;
     font-size: 38px;
@@ -19,19 +22,20 @@
 
   &__logo-yellow {
     margin-left: 10px;
-
     color: #fed501;
-
     font-family: Aleo, serif;
     font-weight: 700;
     font-size: 38px;
   }
   &__word {
     margin-left: auto;
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
 
-    color: $btnbgc;
+    color: white;
 
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -44,11 +48,10 @@
     }
   }
 
-  &__item
-    :hover,
-    :focus {
-      color: #fa9494;
-    }
+  &__item :hover,
+  :focus {
+    color: #fa9494;
+  }
 
   &__link {
     display: block;
