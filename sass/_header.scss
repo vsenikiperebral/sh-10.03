@@ -1,5 +1,14 @@
 .header {
   background-color: $ptxc;
+&__nav {
+    display: flex;
+    align-items: center;
+}
+&__donations {
+    display: flex;
+}
+
+
   &__logo-blue {
     color: #0f6bd0;
 
