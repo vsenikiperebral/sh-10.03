@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.8;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.container .a {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.audio {
+  -ms-flex-item-align: start;
+      align-self: start;
+  margin-top: 8px;
+}
+
+#audio {
+  width: 200px;
+}
+
+.container.main-nav {
+  margin-top: 0;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header__logo-blue {
+  color: #0f6bd0;
+  font-family: Aleo, serif;
+  font-weight: 700;
+  font-size: 38px;
+}
+.header__logo-yellow {
+  margin-left: 10px;
+  color: #fed501;
+  font-family: Aleo, serif;
+  font-weight: 700;
+  font-size: 38px;
+}
+.header__word {
+  margin-left: auto;
+  color: #fa9494;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header .item :hover,
+.header .item :focus {
+  color: #fa9494;
+}
+.header__item :hover,
+.header :focus {
+  color: #fa9494;
+}
+.header__link {
+  display: block;
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}/*# sourceMappingURL=main.css.map */
