@@ -23,17 +23,66 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- HEADER  -->
+
     <header class="header">
-        <nav class="header__nav">
-            <a href="./index.html" class="header__logo-blue"> Slodovnik </a>
-            <a href="./index.html" class="header__logo-yellow"> Help </a>
-            <div class="header__word"> Donation:</div>
-            <ul class="header__donations">
-                <li class="header__item"><a href="./iban.html" class="header__link">IBAN</a></li>
-                <li class="header__item"><a href="./paypal.html" class="header__link">PayPal</a></li>
-                <li class="header__item"><a href="./crypto.html" class="header__link">Crypto</a></li>
-            </ul>
-        </nav>
+      <nav class="header__nav container">
+        <a href="./index.html" class="header__logo-blue"> Slodovnik </a>
+        <a href="./index.html" class="header__logo-yellow"> Help </a>
+        <div class="header__word">Donation:</div>
+        <ul class="header__donations">
+          <li class="header__item">
+            <a href="./paypal.html" class="header__link">PayPal</a>
+          </li>
+          <li class="header__item">
+            <a href="./crypto.html" class="header__link">Crypto</a>
+          </li>
+          <li class="header__item">
+            <a href="./iban.html" class="header__link">IBAN</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
+    <!-- HERO  -->
+
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__img-title">
+          <img
+            class="hero__img"
+            src="./images/main-bw.jpg"
+            alt=""
+            width="720"
+          />
+          <div class="hero__title">
+            <h1 class="hero__title-first">24 Feb 2022</h1>
+            <h2 class="hero__title-second">
+              Our Family Life <br />Changed Forever
+            </h2>
+          </div>
+        </div>
+     <div class="hero__audio-text-btn">
+            <div class="hero__audio">
+              <audio id="audio" src="./audio/nk_you_crying.mp3" controls></audio>
+            </div>
+            <div class="hero__text">
+              <p class="hero__p">
+                The offensive of the army of the Russian Federation on Ukraine began
+                simultaneously from several directions.
+              </p>
+              <p class="hero__p">
+                One of the key directions for the capture of Kyiv was the North,
+                from the side of the Republic of Belarus.
+              </p>
+              <p class="hero__p">
+                Cities such as Borodyanka, Gostomel, Bucha and Irpin were subjected
+                to massive air strikes from the first day of the offensive.
+              </p>
+            </div>
+            <button class="hero__button">HELP PLEASE</button>
+     </div >
+      </div>
+    </section>
   </body>
 </html>

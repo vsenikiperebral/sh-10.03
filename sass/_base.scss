@@ -1,0 +1,49 @@
+body {
+  background-color: $pbgc;
+  color: $ptxc;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0em;
+  line-height: 1.8;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: block;
+//   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.container .a {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  color: $ptxc;
+}
+
+.audio {
+  align-self: start;
+  // margin-left: 40px;
+  margin-top: 8px;
+}
+
+#audio {
+  width: 200px;
+}
+
+.container.main-nav {
+  margin-top: 0;
+}

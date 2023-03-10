@@ -1,0 +1,38 @@
+.hero__button {
+    display: inline-block;
+    height: 70px;
+    min-width: 130px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: $pbgc;
+    background-color: $btnbgc;
+    border: 1px solid $ptxc;
+
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+}
+
+// .hero__button:hover {
+//     background-color: #fff;
+//   border-color: #007bff;
+//   color: #007bff;
+// }
+
+// display: inline-block;
+//   border-radius: 4px;
+//   background-color: #f4511e;
+//   border: none;
+//   color: #FFFFFF;
+//   text-align: center;
+//   font-size: 28px;
+//   padding: 20px;
+//   width: 200px;
+//   transition: all 0.5s;
+//   cursor: pointer;
+//   margin: 5px;
