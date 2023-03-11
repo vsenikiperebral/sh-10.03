@@ -1,0 +1,26 @@
+.house-two {
+    padding-top: 100px;
+
+    &__text {
+        text-align: left;
+    }
+    &__text-img {
+        display: flex;
+        gap: 200px;
+        
+    }
+    &__img-2 {
+        position: absolute;
+        left: 220px;
+  bottom: -70px;
+    }
+    &__text-img {
+        position: relative;
+    }
+    &__lis {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 100px;
+    }
+}

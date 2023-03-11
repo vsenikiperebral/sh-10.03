@@ -7,6 +7,15 @@
         gap: 100px;
         margin-bottom: 50px;
     }
+    &__img-1 {
+        padding-right: 10px;
+        padding-bottom: 10px;
+    
+        border-color: RGBA(255, 255, 255, 0);
+        border-right-width: 10px;
+        border-bottom-width: 10px;
+        box-shadow: 6px 6px 0px -5px #eb1d36;  
+    }
     &__text {
         text-align: left;
     }

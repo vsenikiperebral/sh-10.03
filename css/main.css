@@ -386,9 +386,52 @@ h3 {
   gap: 100px;
   margin-bottom: 50px;
 }
+.house-one__img-1 {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-color: RGBA(255, 255, 255, 0);
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+  -webkit-box-shadow: 6px 6px 0px -5px #eb1d36;
+          box-shadow: 6px 6px 0px -5px #eb1d36;
+}
 .house-one__text {
   text-align: left;
 }
 .house-one__p {
   margin-top: 30px;
+}
+
+.house-two {
+  padding-top: 100px;
+}
+.house-two__text {
+  text-align: left;
+}
+.house-two__text-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 200px;
+}
+.house-two__img-2 {
+  position: absolute;
+  left: 220px;
+  bottom: -70px;
+}
+.house-two__text-img {
+  position: relative;
+}
+.house-two__lis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
 }/*# sourceMappingURL=main.css.map */
