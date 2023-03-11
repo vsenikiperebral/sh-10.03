@@ -1,0 +1,16 @@
+.house-one {
+    background-color: #f7f6f1;
+    padding-top: 100px;
+    &__text-img {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        margin-bottom: 50px;
+    }
+    &__text {
+        text-align: left;
+    }
+    &__p {
+        margin-top: 30px;
+    }
+}

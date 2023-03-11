@@ -24,7 +24,6 @@ h2 {
   padding-bottom: 30px;
   &::after {
     content: "";
-    display: block;
     width: 100%;
     height: 1px;
     background-color: $brdc-red;
