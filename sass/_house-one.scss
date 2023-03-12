@@ -1,6 +1,9 @@
 .house-one {
   background-color: #f7f6f1;
   padding-top: 100px;
+  &__all {
+    padding-bottom: 100px;
+  }
   &__text-img {
     display: flex;
     justify-content: space-between;
