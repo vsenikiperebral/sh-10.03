@@ -220,6 +220,28 @@ h3 {
   letter-spacing: 0.04em;
 }
 
+.menu-button {
+  fill: rgba(255, 255, 255, 0.8);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  bottom: none;
+  background-color: transparent;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .hero {
   background-image: url("../images/hero-bg-1.jpg");
   background-repeat: no-repeat;

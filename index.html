@@ -29,6 +29,14 @@
       <nav class="header__nav container">
         <a href="./index.html" class="header__logo-blue">Slodovnik</a>
         <a href="./index.html" class="header__logo-yellow">Help</a>
+        <div>
+          <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+              <svg class="bars" width="32" height="32" aria-label="Mobile menu switch">
+                  <use class="icon-menu" href="./icons/symbol-defs-menu.svg#menu"></use>
+                  <use class="icon-cross" href="./icons/symbol-defs-menu.svg#close"></use>
+              </svg>
+          </button>
+      </div>
         <div class="header__word">Donation:</div>
         <ul class="header__donations">
           <li class="header__item">
@@ -349,6 +357,6 @@
         </ul>
       </div>
     </section>
-      
+    <script src="./js/menu.js"></script>
 </body>
 </html>
