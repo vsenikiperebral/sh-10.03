@@ -1,0 +1,43 @@
+.house-two {
+  padding-top: 100px;
+  margin-bottom: 150px;
+
+  &__text {
+    text-align: left;
+  }
+  &__text-img {
+    display: flex;
+    gap: 180px;
+    align-items: center;
+  }
+  &__img-1 {
+    padding-left: 10px;
+    padding-top: 10px;
+
+    border-color: RGBA(255, 255, 255, 0);
+    border-left-width: 10px;
+    border-top-width: 10px;
+    box-shadow: -6px -6px 0px -5px #eb1d36;
+  }
+  &__img-2 {
+    position: absolute;
+    left: 220px;
+    bottom: -70px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    border-color: RGBA(255, 255, 255, 0);
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    box-shadow: 6px 6px 0px -5px #eb1d36;
+  }
+  &__text-img {
+    position: relative;
+  }
+  &__lis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 150px;
+  }
+}

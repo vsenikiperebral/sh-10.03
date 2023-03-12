@@ -1,21 +1,59 @@
 .hero__button {
-    display: inline-block;
-    height: 70px;
-    min-width: 130px;
-    padding-left: 36px;
-    padding-right: 36px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  height: 70px;
+  min-width: 130px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-    color: $pbgc;
-    background-color: $btnbgc;
-    border: 1px solid $ptxc;
+  color: $pbgc;
+  background-color: $btnbgc;
+  border: 1px solid $ptxc;
 
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.03em;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.donate__button {
+  height: 70px;
+  min-width: 130px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $pbgc;
+  background-color: $btnbgc;
+  border: 1px solid $ptxc;
+
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.about__button {
+  width: 200px;
+  height: 70px;
+  min-width: 130px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $ptxc;
+  background-color: $pbgc;
+  border: 1px solid $ptxc;
+
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.03em;
 }
 
 // .hero__button:hover {
