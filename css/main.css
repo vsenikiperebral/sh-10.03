@@ -150,7 +150,13 @@ h3 {
 }
 
 .header {
+  position: sticky;
+  top: -2px;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 999;
 }
 .header__nav {
   display: -webkit-box;
@@ -465,4 +471,29 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 150px;
+}
+
+.frames__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.frames__all__img-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+.frames__all__flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=main.css.map */

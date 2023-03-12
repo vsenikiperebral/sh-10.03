@@ -1,0 +1,12 @@
+.frames__all {
+    display: flex;
+    &__img-left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px; 
+    }
+    &__flex-2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
