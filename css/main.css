@@ -473,22 +473,12 @@ h3 {
   gap: 150px;
 }
 
-.frames__all {
+.frames {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.frames__all__img-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 50px;
-}
-.frames__all__flex-2 {
+.frames__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

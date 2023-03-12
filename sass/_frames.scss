@@ -1,11 +1,6 @@
-.frames__all {
+.frames {
     display: flex;
-    &__img-left {
-        display: flex;
-        flex-direction: column;
-        gap: 50px; 
-    }
-    &__flex-2 {
+    &__left {
         display: flex;
         flex-direction: column;
     }
