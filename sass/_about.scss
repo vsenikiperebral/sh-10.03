@@ -1,11 +1,10 @@
 .about {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
   &__title-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-
   }
   &__all {
     height: 600px;

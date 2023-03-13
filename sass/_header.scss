@@ -1,56 +1,54 @@
 .header {
+  position: fixed;
+  width: 100%;
+  left: 0;
   background-color: $ptxc;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 99;
 
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
   }
-
-  &__donations {
-    display: flex;
-    @media screen and (max-width: 1279px) {
-      display: none;
-    }
-  }
-
   &__logo-blue {
     color: #0f6bd0;
     font-family: Aleo, serif;
     font-weight: 700;
     font-size: 38px;
+    letter-spacing: 0.03em;
+    @media screen and (max-width: 1279px) {
+      font-size: calc(28px + (38 - 28) * ((100vw - 360px) / (1280 - 360)));
+    }
   }
-
   &__logo-yellow {
     margin-left: 10px;
     color: #fed501;
     font-family: Aleo, serif;
     font-weight: 700;
     font-size: 38px;
+    letter-spacing: 0.03em;
+    @media screen and (max-width: 1279px) {
+      font-size: calc(28px + (38 - 28) * ((100vw - 360px) / (1280 - 360)));
+    }
   }
   &__word {
     margin-left: auto;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     @media screen and (max-width: 1279px) {
       display: none;
     }
-
-    color: white;
-
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
   }
-
-  .item {
-    :hover,
-    :focus {
-      color: #fa9494;
+  &__donations {
+    display: flex;
+    @media screen and (max-width: 1279px) {
+      display: none;
     }
-  }
-
-  &__item :hover,
-  :focus {
-    color: #fa9494;
   }
 
   &__link {
@@ -60,6 +58,51 @@
     color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  &__link:hover {
+    color: #fa9494;
+  }
+  &__link:focus {
+    color: #fa9494;
+  }
+
+  &__donations-mobile-link {
+    display: block;
+    list-style: none;
+    margin-left: 15px;
+
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    font-weight: 700;
     letter-spacing: 0.04em;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__donations-mobile-link:hover {
+    color: #fa9494;
+  }
+  &__donations-mobile-link:focus {
+    color: #fa9494;
+  }
+
+  &__donations-mobile-item:hover {
+     background-color: rgba(0, 0, 0, 0.2); 
+  }
+  &__donations-mobile-item:focus {
+    background-color: rgba(0, 0, 0, 0.2); 
+  }
+
+  &__donations-mobile-item {
+    display: block;
+  }
+
+
+  &__donations-mobile {
+    display: flex;
+    @media screen and (max-width: 1279px) {
+      display: block;
+    }
   }
 }

@@ -8,6 +8,7 @@ body {
   line-height: 1.8;
   margin-left: auto;
   margin-right: auto;
+  // overflow-x: hidden;
 }
 
 p {
@@ -23,6 +24,8 @@ p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+
+  // border: 5px solid red;
 }
 
 .container .a {

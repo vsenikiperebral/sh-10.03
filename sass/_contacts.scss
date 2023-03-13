@@ -1,0 +1,70 @@
+
+.contacts.list .link {
+    color: $ptxc;
+    font-size: 17px;
+}
+
+.contacts-word {
+  font-family: Aleo, serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+
+.container .title {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.contacts .item {
+  align-self: center;
+  text-align: center;
+  border: 1px solid $brdc;
+  width: 280px;
+}
+
+.phone {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.mail {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-phone {
+    fill: $btnbgc;
+}
+
+.icon-mail {
+    fill: $btnbgc;
+}
+
+.icon-map {
+    fill: $btnbgc;
+}
+
+.appart-img {
+    margin-top: 30px;
+}

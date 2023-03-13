@@ -25,11 +25,40 @@
 
   <body>
     <!-- HEADER  -->
-
     <header class="header">
       <nav class="header__nav container">
-        <a href="./index.html" class="header__logo-blue"> Slodovnik </a>
-        <a href="./index.html" class="header__logo-yellow"> Help </a>
+        <div>
+          <a href="./index.html" class="header__logo-blue">Slodovnik</a>
+          <a href="./index.html" class="header__logo-yellow">Help</a>
+        </div>
+        <div>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg class="bars" width="32" height="32" aria-label="Mobile menu switch">
+              <use class="icon-menu" href="./icons/symbol-defs-menu.svg#menu"></use>
+              <use class="icon-cross" href="./icons/symbol-defs-menu.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container container" aria-expanded="false" id="menu-container" data-menu>
+          <ul class="header__donations-mobile">
+            <li class="header__donations-mobile-item">
+              <a href="./paypal.html" class="header__donations-mobile-link">PayPal</a>
+            </li>
+            <li class="header__donations-mobile-item">
+              <a href="./crypto.html" class="header__donations-mobile-link">Crypto</a>
+            </li>
+            <li class="header__donations-mobile-item">
+              <a href="./iban.html" class="header__donations-mobile-link">IBAN</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="header__word">Donation:</div>
         <ul class="header__donations">
           <li class="header__item">
@@ -44,225 +73,338 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <!-- HERO  -->
 
-    <!-- HERO  -->
-
-    <section class="hero">
-      <div class="hero__container">
-        <div class="hero__img-title">
-          <img
-            class="hero__img hero__flex-item"
-            src="./images/main-bw.jpg"
-            alt=""
-            width="720"
-          />
-          <div class="hero__title">
-            <h1 class="hero__title-first hero__flex-item">24 Feb 2022</h1>
-            <h2 class="hero__title-second hero__flex-item">
-              Our Family Life <br />Changed Forever
-            </h2>
-          </div>
-        </div>
-        <div class="hero__audio-text-btn">
-          <div class="hero__audio">
-            <audio id="audio" src="./audio/nk_you_crying.mp3" controls></audio>
-          </div>
-          <div class="hero__text">
-            <p class="hero__p">
-              The offensive of the army of the Russian Federation on Ukraine
-              began simultaneously from several directions.
-            </p>
-            <p class="hero__p">
-              One of the key directions for the capture of Kyiv was the North,
-              from the side of the Republic of Belarus.
-            </p>
-            <p class="hero__p">
-              Cities such as Borodyanka, Gostomel, Bucha and Irpin were
-              subjected to massive air strikes from the first day of the
-              offensive.
-            </p>
-          </div>
-          <button class="hero__button">HELP PLEASE</button>
-        </div>
-      </div>
-
-      <!-- DIVIDER -->
-
-      <div class="divider-bottom">
-        <img src="./images/pixel-white.jpg" alt="" />
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-
-    <section class="about">
-      <div class="container">
-        <div class="about__all">
-          <div class="about__flex-1">
-            <img
-              src="./images/alex-1.jpg"
-              alt=""
-              class="about__img-1"
-              width="310"
-            />
-          </div>
-          <div class="about__title-text about__flex-2">
-            <span>ABOUT</span>
-            <h2 class="about__title">Hi! I'm Aleksandra</h2>
-            <p>
-              My name is Alexandra! I am a mother of two children, a boy George
-              and a girl Dasha, who miraculously escaped from the city called
-              Irpin.
-            </p>
-            <p>
-              On February 24, 2022, Russia invaded Ukraine and our city was one
-              of the first to take on air and artillery strikes.
-            </p>
-            <div>
-              <button class="about__button">HELP PLEASE</button>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__img-title">
+            <img class="hero__img hero__flex-item" src="./images/main-bw.jpg" alt="" width="720" />
+            <div class="hero__title">
+              <h1 class="hero__title-first hero__flex-item">24 Feb 2022</h1>
+              <h2 class="hero__title-second hero__flex-item">
+                Our Family Life
+                <br />
+                Changed Forever
+              </h2>
             </div>
           </div>
-          <div class="about__flex-3">
-            <img
-              src="./images/alex-2.jpg"
-              alt=""
-              class="about__img-2"
-              width="310"
-            />
+          <div class="hero__audio-text-btn">
+            <div class="hero__audio">
+              <audio id="audio" src="./audio/nk_you_crying.mp3" controls></audio>
+            </div>
+            <div class="hero__text">
+              <p class="hero__p">
+                The offensive of the army of the Russian Federation on Ukraine began simultaneously from several
+                directions.
+              </p>
+              <p class="hero__p">
+                One of the key directions for the capture of Kyiv was the North, from the side of the Republic of
+                Belarus.
+              </p>
+              <p class="hero__p">
+                Cities such as Borodyanka, Gostomel, Bucha and Irpin were subjected to massive air strikes from the
+                first day of the offensive.
+              </p>
+            </div>
+            <button class="hero__button">HELP PLEASE</button>
           </div>
         </div>
+
+        <!-- DIVIDER -->
+
+        <div class="divider-bottom">
+          <img src="./images/pixel-white.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+
+      <section class="about">
+        <div class="container">
+          <div class="about__all">
+            <div class="about__flex-1">
+              <img src="./images/alex-1.jpg" alt="" class="about__img-1" width="310" />
+            </div>
+            <div class="about__title-text about__flex-2">
+              <span>ABOUT</span>
+              <h2 class="about__title">Hi! I'm Aleksandra</h2>
+              <p>
+                My name is Alexandra! I am a mother of two children, a boy George and a girl Dasha, who miraculously
+                escaped from the city called Irpin.
+              </p>
+              <p>
+                On February 24, 2022, Russia invaded Ukraine and our city was one of the first to take on air and
+                artillery strikes.
+              </p>
+              <div>
+                <button class="about__button">HELP PLEASE</button>
+              </div>
+            </div>
+            <div class="about__flex-3">
+              <img src="./images/alex-2.jpg" alt="" class="about__img-2" width="310" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOUSE-1 -->
+
+      <div class="divider-top">
+        <img src="./images/pixel-white.jpg" alt="" />
       </div>
-    </section>
 
-    <!-- HOUSE-1 -->
+      <section class="house-one">
+        <div class="container">
+          <div class="house-one__all">
+            <ul>
+              <div class="house-one__lis">
+                <li>
+                  <div class="house-one__text-img">
+                    <div class="house-one__text house-one__flex-1">
+                      <h2 class="house-one__h">
+                        2 Shells Hit
+                        <br />
+                        The House
+                      </h2>
+                      <p class="house-one__p">
+                        After spending the first day in the basement of a neighboring house, next morning February 25,
+                        it was decided to evacuate to western Ukraine and then to Europe.
+                      </p>
+                      <p class="house-one__p">
+                        For about a month, fierce battles were fought for our beloved city, which moved into the most
+                        active phase on March 23.
+                      </p>
+                    </div>
+                    <div class="house-one__img house-one__flex-2">
+                      <img href src="./images/main-1-data.jpg" class="house-one__img-1" alt="" width="500" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="house-one__text-img">
+                    <div class="house-one__text house-one__flex-1">
+                      <h2 class="house-one__h">
+                        3 Days The
+                        <br />
+                        Fire Lasted
+                      </h2>
+                      <p class="house-one__p">
+                        After the arrival of several shells in a residential complex, our apartment caught fire.
+                        According to eyewitnesses, the apartment was burning for 2 days!
+                      </p>
+                      <p class="house-one__p">
+                        The tense situation and constant shelling did not allow public utilities to quickly eliminate
+                        the fire. Everything acquired over 10 years of a happy life was completely destroyed in an
+                        instant!
+                      </p>
+                    </div>
+                    <div class="house-one__img house-one__flex-2">
+                      <img href src="./images/main-1-data.jpg" class="house-one__img-1" alt="" width="500" />
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="divider-bottom">
+          <img src="./images/pixel-white.jpg" alt="" />
+        </div>
+      </section>
 
-    <div class="divider-top">
-      <img src="./images/pixel-white.jpg" alt="" />
-    </div>
+      <!-- HOUSE-2 -->
 
-    <section class="house-one">
-      <div class="container">
-        <div class="house-one__all">
-          <ul>
-            <li>
-              <div class="house-one__text-img">
-                <div class="house-one__text house-one__flex-1">
-                  <h2 class="house-one__h">
-                    2 Shells Hit <br />
-                    The House
-                  </h2>
-                  <p class="house-one__p">
-                    After spending the first day in the basement of a
-                    neighboring house, next morning February 25, it was decided
-                    to evacuate to western Ukraine and then to Europe.
-                  </p>
-                  <p class="house-one__p">
-                    For about a month, fierce battles were fought for our
-                    beloved city, which moved into the most active phase on
-                    March 23.
-                  </p>
-                </div>
-                <div class="house-one__img house-one__flex-2">
-                  <img href src="./images/main-1-data.jpg" class="house-one__img-1" alt="" width="500" />
-                </div>
+      <section class="house-two">
+        <div class="container">
+          <div class="house-two__all">
+            <ul>
+              <div class="house-two__lis">
+                <li>
+                  <div class="house-two__text-img">
+                    <div class="house-two__img-all">
+                      <img src="./images/main-4.jpg" class="house-two__img-1" alt="" width="390" />
+                      <img src="./images/main-5.jpg" class="house-two__img-2" alt="" width="250" />
+                    </div>
+                    <div class="house-two__text">
+                      <h2 class="house-one__h">
+                        Neighbor House
+                        <br />
+                        Half Destroyed
+                      </h2>
+                      <p class="house-one__p">
+                        The current situation of my family is tough as my husband and I have lost our jobs, and we are
+                        struggling to make ends meet. We are doing everything we can to earn some money for our family's
+                        basic needs, but we are finding it challenging to restore our damaged apartment on our own. The
+                        thought of renovating our home anytime soon seems impractical due to our financial constraints.
+                      </p>
+                      <p class="house-one__p">
+                        Any contribution towards our household would help us return to our hometown and begin the
+                        restoration process of our cherished, small apartment. It holds a special place in our hearts as
+                        it has been a witness to our joy and happiness before the war. We would be immensely grateful
+                        for any support that could assist us in rebuilding our home.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="house-two__li">
+                  <div class="house-two__text-img">
+                    <div class="house-two__img-all">
+                      <img src="./images/main-6.jpg" class="house-two__img-1" alt="" width="390" />
+                      <img src="./images/main-7.jpg" class="house-two__img-2" alt="" width="250" />
+                    </div>
+                    <div class="house-two__text">
+                      <h2>
+                        Apartment
+                        <br />
+                        Burned Down
+                      </h2>
+                      <p class="house-one__p">
+                        As we sit in the family circle and remember cherished possessions that are now lost, tears
+                        stream down our faces. For our children, the loss of their favorite toys and personal items,
+                        some of which have been with them since infancy, is especially difficult to bear.
+                      </p>
+                      <p class="house-one__p">
+                        It can be challenging to let go of things that hold sentimental value, but we hold onto the
+                        memories and the love that these objects represent. Though the pain may linger, we find comfort
+                        in knowing that we still have each other, and that our love and bond as a family will endure.
+                      </p>
+                      <p class="house-one__p">
+                        We thank God for saving our lives, the lives of our children and relatives! We really hope that
+                        Ukraine will survive!
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-top">
+        <img src="./images/pixel-white.jpg" alt="" />
+      </div>
+
+      <!-- FRAMES -->
+
+      <section class="frames-section">
+        <div class="frames container">
+          <div class="frames__left">
+            <img src="./images/main-15.jpg" class="frames__item frames__item-1" alt="" width="490" />
+            <img src="./images/main-14.jpg" class="frames__item frames__item-2" alt="" width="490" />
+            <p class="frames__item frames__item-7">
+              The indiscriminate targeting of civilians, including women and children, is a gross violation of
+              international human rights law and the Geneva Conventions!
+            </p>
+          </div>
+          <div class="frames__right">
+            <h2>
+              Frames
+              <br />
+              Of Hell
+            </h2>
+            <p class="frames__p">
+              In Irpen, according to official figures, the Russian army killed about 300 civilians, including women and,
+              worst of all, children!
+            </p>
+            <img src="./images/main-17.jpg" class="frames__item frames__item-4" alt="" width="274" />
+            <img src="./images/main-20.jpg" class="frames__item frames__item-5" alt="" width="274" />
+            <img src="./images/main-16.jpg" class="frames__item frames__item-6" alt="" width="600" />
+          </div>
+        </div>
+        <div class="divider-bottom">
+          <img src="./images/pixel-white.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- DONATE -->
+
+      <section class="donate-section">
+        <div class="donate container">
+          <div class="donate__all">
+            <p class="donate__help">PLEASE HELP RESTORE OUR APARTMENT</p>
+            <p class="donate__amount">30 000 $</p>
+            <p class="donate__p">
+              After a shell hit and a prolonged fire, property was completely destroyed,
+              <br />
+              load-bearing walls and floor slabs were badly damaged.
+              <br />
+              Thank you for paying attention to my request.
+            </p>
+            <button class="donate__button">HELP PLEASE</button>
+            <div>
+              <h3 class="donate__hopes">With Hopes For Your Support!</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+
+      <section>
+        <div class="container">
+          <div class="title">
+            <h3>For Contact At Any Time!</h3>
+          </div>
+          <ul class="contacts list">
+            <li class="item phone">
+              <div>
+                <svg class="icon-phone" width="42" height="46">
+                  <use href="./icons/symbol-defs.svg#phone"></use>
+                </svg>
+                <p class="contacts-word">Phone</p>
+                <a class="link" href="tel:+380962134865">+380 96 213 48 65</a>
               </div>
             </li>
-            <li>
-              <div class="house-one__text-img">
-                <div class="house-one__text house-one__flex-1">
-                  <h2 class="house-one__h">
-                    3 Days The <br />
-                    Fire Lasted
-                  </h2>
-                  <p class="house-one__p">
-                    After the arrival of several shells in a residential
-                    complex, our apartment caught fire. According to
-                    eyewitnesses, the apartment was burning for 2 days!
-                  </p>
-                  <p class="house-one__p">
-                    The tense situation and constant shelling did not allow
-                    public utilities to quickly eliminate the fire. Everything
-                    acquired over 10 years of a happy life was completely
-                    destroyed in an instant!
-                  </p>
-                </div>
-                <div class="house-one__img house-one__flex-2">
-                  <img href src="./images/main-1-data.jpg" class="house-one__img-1" alt="" width="500" />
-                </div>
+            <li class="item mail">
+              <div>
+                <svg class="icon-mail" width="60" height="46">
+                  <use href="icons/symbol-defs.svg#mail"></use>
+                </svg>
+                <p class="contacts-word">Email</p>
+                <a class="link" href="mailto:x0962134865@gmail.com">x0962134865@gmail.com</a>
+              </div>
+            </li>
+            <li class="item address">
+              <div>
+                <svg class="icon-mail" width="62" height="46">
+                  <use href="icons/symbol-defs.svg#map"></use>
+                </svg>
+                <p class="contacts-word">Address</p>
+                <a class="link" href="mailto:x0962134865@gmail.com">22-Zh, Kyivska St., apt.18, Irpin</a>
               </div>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="divider-bottom">
-        <img src="./images/pixel-white.jpg" alt="" />
-      </div>
-    </section>
+      </section>
 
-    <!-- HOUSE-2 -->
+      <section>
+        <div class="map container">
+          <div class="map__all map__item map__item-1">
+            <h3 class="map__tittle">Complex «SPARTA» On The Google Maps</h3>
+          <div class="map__frame">
+            <iframe
+              class="map__google"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d634.2599469959761!2d30.2289646!3d50.51482649076963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b33d9dbb7368d%3A0x69bd48ad32076c32!2z0J7QodCR0JEg0KHQv9Cw0YDRgtCw!5e0!3m2!1sen!2sbg!4v1664389416583!5m2!1sen!2sbg" width="540" height="700" style="border-width: 1px; border-style: solid; border-color: black; padding: 20px;"
 
-    <section class="house-two">
-      <div class="container">
-        <div class="house-two__all">
-          <ul>
-          <div class="house-two__lis">
-            <li>
-              <div class="house-two__text-img">
-                <div class="house-two__img-all">
-                  <img src="./images/main-4.jpg" class="house-two__img-1" alt="" width="390" />
-                <img src="./images/main-5.jpg" class="house-two__img-2" alt="" width="250" />
-                </div>
-                <div class="house-two__text" >
-                  <h2 class="house-one__h">
-                    Neighbor House <br />
-                    Half Destroyed
-                  </h2>
-                  <p class="house-one__p"></p>
-                    At the moment, having lost our jobs, my husband and I are
-                    constantly trying to earn some money for the household needs of
-                    the family. But the prospect of restoring the destroyed
-                    apartment on their own in the near future seems unrealistic.
-                  </p>
-                  <p class="house-one__p"></p>
-                    Any material donation will help our family to return to their
-                    hometown as soon as possible and start restoring our small, but
-                    very memorable apartment, in which we were so happy together
-                    before the war.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="house-two__li">
-              <div class="house-two__text-img">
-                <div class="house-two__img-all">
-                  <img src="./images/main-6.jpg" class="house-two__img-1" alt="" width="390" />
-                 <img src="./images/main-7.jpg" class="house-two__img-2" alt="" width="250" />
-                 </div>
-              <div class="house-two__text">
-                <h2>
-                  Apartment <br />
-                  Burned Down
-                </h2>
-                <p class="house-one__p"></p>
-                  In the family circle with tears we remember things dear to our
-                  hearts that will never be returned!
-                </p>
-                <p class="house-one__p"></p>
-                  It was very difficult for our kids to accept the loss of their
-                  favorite toys and personal items, especially those that have been
-                  preserved since infancy.
-                </p>
-                <p>
-                  We thank God for saving our lives, the lives of our children and
-                  relatives! We really hope that Ukraine will survive!
-                </p>
-              </div>
-              </div>
-            </li>
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-        </ul>
-         </div>
-      </div>
-    </section>
+          </div>
+          <div class="map__appart map__item map__item-2">
+            <h3 class="map__tittle">Appartment Document</h3>
+            <img src="./images/pass-1.jpg" alt="" class="map__appart-img" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <span class="footer__tittle">May God Keep You</span>
+      <p class="copyright">Copyright &copy; SlodHelp.com | 2022</p>
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
