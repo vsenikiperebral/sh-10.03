@@ -179,7 +179,7 @@ h3 {
 }
 @media screen and (max-width: 1279px) {
   .header__logo-blue {
-    font-size: calc(28px + 10 * (100vw - 360px) / 960);
+    font-size: calc(28px + 10 * (100vw - 360px) / 920);
   }
 }
 .header__logo-yellow {
@@ -192,7 +192,7 @@ h3 {
 }
 @media screen and (max-width: 1279px) {
   .header__logo-yellow {
-    font-size: calc(28px + 10 * (100vw - 360px) / 960);
+    font-size: calc(28px + 10 * (100vw - 360px) / 920);
   }
 }
 .header__word {
@@ -336,7 +336,6 @@ h3 {
   max-width: 1320px;
 }
 .hero__img {
-  max-width: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -350,7 +349,7 @@ h3 {
   padding: 100px 0;
 }
 .hero__text {
-  width: 620px;
+  max-width: 620px;
   margin-bottom: 80px;
   text-align: left;
 }
@@ -797,15 +796,33 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 5px solid red;
 }
 .map__frame {
   margin-top: 30px;
 }
 .map__appart-img {
   margin-top: 30px;
-  width: 520px;
+  width: 540px;
   height: 700px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 100px;
+  padding-top: 5px;
+}
+.footer span {
+  font-family: Aleo, serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+.footer p {
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
