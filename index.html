@@ -32,14 +32,33 @@
           <a href="./index.html" class="header__logo-yellow">Help</a>
         </div>
         <div>
-          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg class="bars" width="32" height="32" aria-label="Mobile menu switch">
               <use class="icon-menu" href="./icons/symbol-defs-menu.svg#menu"></use>
               <use class="icon-cross" href="./icons/symbol-defs-menu.svg#close"></use>
             </svg>
           </button>
         </div>
-        <div class="menu-container container is-open" id="menu-container" data-menu>Контент меню</div>
+        <div class="menu-container container is-open" aria-expanded="false" id="menu-container" data-menu>
+          <ul class="header__donations-mobile">
+            <li class="header__donations-mobile-item">
+              <a href="./paypal.html" class="header__donations-mobile-link">PayPal</a>
+            </li>
+            <li class="header__donations-mobile-item">
+              <a href="./crypto.html" class="header__donations-mobile-link">Crypto</a>
+            </li>
+            <li class="header__donations-mobile-item">
+              <a href="./iban.html" class="header__donations-mobile-link">IBAN</a>
+            </li>
+          </ul>
+          </div>
+        </div>
 
         <div class="header__word">Donation:</div>
         <ul class="header__donations">
