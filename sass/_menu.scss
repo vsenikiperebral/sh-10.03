@@ -1,5 +1,5 @@
 .menu-button {
-    display: inline-flex;
+  display: inline-flex;
   fill: rgba(255, 255, 255, 0.8);
   display: inline-flex;
   margin: 0;
@@ -23,7 +23,7 @@
 }
 
 .menu-container {
-display: none;
+  display: none;
 
   position: absolute;
   top: 100%;
@@ -39,5 +39,8 @@ display: none;
 }
 
 .menu-container.is-open {
-    display: block;
+  display: block;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
