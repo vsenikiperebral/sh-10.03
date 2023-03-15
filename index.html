@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/test.css" />
   </head>
 
   <body>
@@ -349,7 +350,7 @@
           </div>
           <ul class="contacts list">
             <li class="item phone">
-              <div>
+              <div class="contacts__card">
                 <svg class="icon-phone" width="42" height="46">
                   <use href="./icons/symbol-defs.svg#phone"></use>
                 </svg>
@@ -383,28 +384,49 @@
         <div class="map container">
           <div class="map__all map__item map__item-1">
             <h3 class="map__tittle">Complex «SPARTA» On The Google Maps</h3>
-          <div class="map__frame">
-            <iframe
-              class="map__google"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d634.2599469959761!2d30.2289646!3d50.51482649076963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b33d9dbb7368d%3A0x69bd48ad32076c32!2z0J7QodCR0JEg0KHQv9Cw0YDRgtCw!5e0!3m2!1sen!2sbg!4v1664389416583!5m2!1sen!2sbg" width="540" height="700" style="border-width: 1px; border-style: solid; border-color: black; padding: 20px;"
-
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+            <div class="map__frame">
+              <iframe
+                class="map__google"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d634.2599469959761!2d30.2289646!3d50.51482649076963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472b33d9dbb7368d%3A0x69bd48ad32076c32!2z0J7QodCR0JEg0KHQv9Cw0YDRgtCw!5e0!3m2!1sen!2sbg!4v1664389416583!5m2!1sen!2sbg"
+                width="540"
+                height="700"
+                style="border-width: 1px; border-style: solid; border-color: black; padding: 20px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
           <div class="map__appart map__item map__item-2">
             <h3 class="map__tittle">Appartment Document</h3>
-            <img src="./images/pass-1.jpg" alt="" class="map__appart-img" />
+            <img src="./images/pass-1.jpg" class="map__appart-img" id="myBtn" alt="" />
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 style="padding: 0">Appartment Document</h3>
+              <img src="./images/pass-1.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- <section>
+        <button id="myBtn">Open Modal</button>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam doloribus perspiciatis voluptates maxime exercitationem, deleniti impedit similique eos nemo laudantium nostrum repudiandae architecto iusto necessitatibus, est excepturi quis reiciendis.</p>
+          </div>
+        </div>
+      </section> -->
     </main>
     <footer class="footer">
       <span class="footer__tittle">May God Keep You</span>
       <p class="copyright">Copyright &copy; SlodHelp.com | 2022</p>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/test.js"></script>
   </body>
 </html>

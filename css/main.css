@@ -372,6 +372,9 @@ h3 {
   padding-right: 36px;
   padding-top: 16px;
   padding-bottom: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #ffffff;
   background-color: #fa9494;
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -380,6 +383,15 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
+}
+.hero__button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .donate__button {
@@ -397,6 +409,18 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.donate__button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .about__button {
@@ -415,6 +439,18 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.about__button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .divider-bottom {
@@ -734,6 +770,25 @@ h3 {
   text-align: center;
   border: 1px solid #000000;
   width: 280px;
+  -webkit-transition: fill 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: fill 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  -o-transition: fill 0.5s ease-out, transform 0.5s ease-out;
+  transition: fill 0.5s ease-out, transform 0.5s ease-out;
+  transition: fill 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+.contacts .item:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 20px 50px 10px rgba(250, 148, 148, 0.1);
+          box-shadow: 0px 20px 50px 10px rgba(250, 148, 148, 0.1);
+}
+.contacts .item:hover .contacts__card {
+  -webkit-transition: fill 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: fill 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  -o-transition: fill 0.5s ease-out, transform 0.5s ease-out;
+  transition: fill 0.5s ease-out, transform 0.5s ease-out;
+  transition: fill 0.5s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .phone {
@@ -825,4 +880,71 @@ h3 {
   padding-bottom: 10px;
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  opacity: 0; /* Set the initial opacity to 0 */
+  -webkit-animation: fadeIn 500ms ease-in-out forwards;
+          animation: fadeIn 500ms ease-in-out forwards; /* Apply the fadeIn animation */
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); /* Apply a slight upward translation */
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Return to the original position */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); /* Apply a slight upward translation */
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Return to the original position */
+  }
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 100px;
+  border: 1px solid #888;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
