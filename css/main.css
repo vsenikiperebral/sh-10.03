@@ -372,6 +372,9 @@ h3 {
   padding-right: 36px;
   padding-top: 16px;
   padding-bottom: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #ffffff;
   background-color: #fa9494;
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -380,6 +383,15 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
+}
+.hero__button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .donate__button {
@@ -397,6 +409,18 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.donate__button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .about__button {
@@ -415,6 +439,18 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.about__button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .divider-bottom {
@@ -854,7 +890,7 @@ h3 {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 100vh; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
   opacity: 0; /* Set the initial opacity to 0 */
@@ -891,9 +927,11 @@ h3 {
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 100px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
