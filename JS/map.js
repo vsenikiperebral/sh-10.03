@@ -1,11 +1,11 @@
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+const btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
 btn.onclick = function() {
@@ -25,10 +25,31 @@ window.onclick = function(event) {
 }
 
 
-const zoomIcon = document.querySelector('.zoom-icon');
-const image = document.querySelector('img');
 
-zoomIcon.addEventListener('click', () => {
-  // You can replace "path/to/large-image.jpg" with the path to the larger version of the image
-  window.open('./images/pass-1.jpg', '_blank');
-});
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+//  if (ScrollTrigger.isTouch !==1) {
+//     ScrollSmoother.create({
+//         wrapper: '.wrapper',
+//         content: '.content',
+//         smooth: 1.5,
+//         effects: true
+//     })
+//  }
+
+
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('#main-header');
+    var nav = document.querySelector('#main-nav');
+    var scrollPosition = window.pageYOffset;
+  
+    if (scrollPosition > 50) {
+      header.classList.add('shrink');
+      nav.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+      nav.classList.remove('shrink');
+    }
+  });
+  
+  

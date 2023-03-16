@@ -1,7 +1,8 @@
 .header {
   position: fixed;
-  width: 100%;
+  top: 0;
   left: 0;
+  width: 100%;
   background-color: $ptxc;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 99;
@@ -11,6 +12,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+
+    height: 80px;
+
+    transition: all 0.3s ease;
   }
   &__logo-blue {
     color: #0f6bd0;
@@ -88,21 +93,37 @@
   }
 
   &__donations-mobile-item:hover {
-     background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.2);
   }
   &__donations-mobile-item:focus {
-    background-color: rgba(0, 0, 0, 0.2); 
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &__donations-mobile-item {
     display: block;
   }
 
-
   &__donations-mobile {
     display: flex;
     @media screen and (max-width: 1279px) {
       display: block;
     }
+  }
+}
+
+.header__nav.shrink {
+  height: 50px;
+
+  .header__logo-blue {
+    font-size: 30px;
+    transition: all 300ms ease;
+  }
+  .header__logo-yellow {
+    font-size: 30px;
+    transition: all 300ms ease;
+  }
+  .header__word {
+    font-size: 20px;
+    transition: all 300ms ease;
   }
 }
