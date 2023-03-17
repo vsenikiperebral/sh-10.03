@@ -22,15 +22,12 @@
   text-align: center;
   border: 1px solid $brdc;
   width: 280px;
-  transition: fill 0.5s ease-out, transform 0.5s ease-out;
+  transition: all 0.5s ease
+}
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 20px 50px 10px rgba(250, 148, 148, 0.2);
-    // .contacts__card {
-    //   transition: fill 0.5s ease-out, transform 0.5s ease-out;
-    // }
-  }
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 50px 10px rgba(250, 148, 148, 0.2);
 }
 
 .phone {
