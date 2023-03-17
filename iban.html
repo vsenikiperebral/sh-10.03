@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon-icon-flag-32.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+      <div class="iban">
+        <body class="body-iban">
+            <!-- HEADER  -->
+            <header class="header" id="main-header">
+              <nav class="header__nav container" id="main-nav">
+                <div>
+                  <a href="./index.html" class="header__logo-blue">Slodovnik</a>
+                  <a href="./index.html" class="header__logo-yellow">Help</a>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="menu-button"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button
+                  >
+                    <svg class="bars" width="32" height="32" aria-label="Mobile menu switch">
+                      <use class="icon-menu" href="./icons/symbol-defs-menu.svg#menu"></use>
+                      <use class="icon-cross" href="./icons/symbol-defs-menu.svg#close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="menu-container container" aria-expanded="false" id="menu-container" data-menu>
+                  <ul class="header__donations-mobile">
+                    <li class="header__donations-mobile-item">
+                      <a href="./paypal.html" class="header__donations-mobile-link">PayPal</a>
+                    </li>
+                    <li class="header__donations-mobile-item">
+                      <a href="./crypto.html" class="header__donations-mobile-link">Crypto</a>
+                    </li>
+                    <li class="header__donations-mobile-item">
+                      <a href="./iban.html" class="header__donations-mobile-link">IBAN</a>
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="header__word">Donation:</div>
+    
+                <ul class="header__donations">
+                  <li class="header__item">
+                    <a
+                      target="_blank"
+                      href="https://www.paypal.com/donate/?hosted_button_id=MXA9PUYZU6HKU"
+                      class="header__link"
+                    >
+                      PayPal
+                    </a>
+                  </li>
+    
+                  <li class="header__item">
+                    <a target="_blank" href="./crypto.html" class="header__link">Crypto</a>
+                  </li>
+                  <li class="header__item">
+                    <a target="_blank" href="./iban.html" class="header__link is-active">IBAN</a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            <main>
+              <!-- DONATE -->
+    
+              <section class="donate-section">
+                <div class="donate container donate-iban">
+                  <div class="donate__all">
+                    <p class="donate__help donate__help-iban">PLEASE HELP RESTORE OUR APARTMENT</p>
+                    <p class="donate__amount">30 000 $</p>
+                    <p class="donate__p">
+                      After a shell hit and a prolonged fire, property was completely destroyed,
+                      <br />
+                      load-bearing walls and floor slabs were badly damaged.
+                      <br />
+                      Thank you for paying attention to my request.
+                    </p>
+                    <button class="donate__button">HELP PLEASE</button>
+                    <div>
+                      <h3 class="donate__hopes">With Hopes For Your Support!</h3>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+    
+            <!-- FOOTER -->
+    
+            <footer class="footer footer-crypto">
+              <span class="footer__tittle">May God Keep You</span>
+              <p class="copyright">Copyright &copy; SlodHelp.com | 2022</p>
+            </footer>
+            <script src="./js/menu.js"></script>
+            <script src="./js/map.js"></script>
+    
+            <!-- <script src="./js/gsam.min.js"></script>
+            <script src="./js/gsam.main.js"></script>
+    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    
+            <script src="libs/gsap/jsap.mim.js" defer></script>
+            <script src="libs/gsap/scrollTrigger.mim.js" defer></script>
+            <script src="libs/gsap/scrollSmoother.mim.js" defer></script> -->
+      </div>
+      </body>
+</html>

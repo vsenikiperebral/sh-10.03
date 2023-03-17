@@ -1,0 +1,23 @@
+.map {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin-top: 80px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1279px) {
+    display: block;
+  }
+
+  &__frame {
+    margin-top: 30px;
+  }
+
+  &__appart-img {
+    margin-top: 30px;
+    width: 540px;
+    height: 700px;
+    border: 1px solid $ptxc;
+    padding: 20px;
+  }
+}

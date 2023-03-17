@@ -4,6 +4,10 @@
   background-position: center;
   background-size: cover;
   margin-bottom: 100px;
+  @media screen and (max-width: 1279px) {
+    text-align: center;
+    }
+
   &__container {
     margin-left: auto;
     margin-right: auto;
@@ -11,21 +15,58 @@
     padding-right: 20px;
     max-width: 1320px;
   }
+  &__img {
+    width: 720px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    @media screen and (max-width: 1279px) {
+    width: 90%;
+  margin-top: 30px;
+    }
+  }
   &__img-title {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
+    @media screen and (max-width: 1279px) {
+      display: block;
+      padding: 100px 0;
+    }
+  }
+  &__title-first {
+    @media screen and (max-width: 1279px) {
+      font-size: calc(50px + (140 - 50) * ((100vw - 360px) / (1280 - 360)));
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__title-second {
+    @media screen and (max-width: 1279px) {
+      font-size: calc(32px + (96 - 32) * ((100vw - 360px) / (1280 - 360)));
+    }
   }
   &__text {
-    width: 620px;
+    max-width: 620px;
     margin-bottom: 80px;
     text-align: left;
   }
   &__audio-text-btn {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1279px) {
+      display: block;
+    }
   }
   &__p {
     font-size: 22px;
   }
 }
+
+#audio {
+  width: 300px;
+}
+
+
+
+
+
