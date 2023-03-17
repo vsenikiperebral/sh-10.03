@@ -1,5 +1,4 @@
 body {
-  position: relative;
   background-color: $pbgc;
   color: $ptxc;
   font-family: Lato, sans-serif;
@@ -50,4 +49,11 @@ p {
 
 .container.main-nav {
   margin-top: 0;
+}
+
+.body-iban {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }

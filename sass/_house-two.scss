@@ -9,6 +9,10 @@
     display: flex;
     gap: 180px;
     align-items: center;
+    @media screen and (max-width: 1279px) {
+      display: block;
+      position: static;
+    }
   }
   &__img-1 {
     padding-left: 10px;
@@ -30,14 +34,26 @@
     border-right-width: 10px;
     border-bottom-width: 10px;
     box-shadow: 6px 6px 0px -5px #eb1d36;
+    @media screen and (max-width: 1279px) {
+      display: block;
+      position: static;
+    }
   }
   &__text-img {
     position: relative;
+    @media screen and (max-width: 1279px) {
+      display: block;
+      position: static;
+    }
   }
   &__lis {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 150px;
+    @media screen and (max-width: 1279px) {
+      display: block;
+      position: static;
+    }
   }
 }
