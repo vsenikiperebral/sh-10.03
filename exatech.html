@@ -1,35 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Title of the document</title>
-    <body>
-        <div id="box">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon-icon-flag-32.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+      <div id="box">
           <div id="borderLeft"></div>
           <div id="borderRight"></div>
           <div id="borderBottom"></div>
           <div id="borderTop"></div>
-          <div>
-            <svg class="logo" width="256" height="38" viewBox="0 0 256 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M42 0H0V7H42V0Z" fill="#221F20"/>
-                <path d="M42 15H0V22H42V15Z" fill="#221F20"/>
-                <path d="M42 31H0V38H42V31Z" fill="#221F20"/>
-                <path d="M57 0L69 13.2353L81 0H91L74 18.75L91 37.5H81L69 24.2647L57 37.5H47L64 18.75L47 0H57Z" fill="#221F20"/>
-                <path d="M138 0H96V7H138V0Z" fill="#221F20"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M96 15H138V38H96V15ZM103 22H131V31H103V22Z" fill="#221F20"/>
-                <rect x="146" width="110" height="38" fill="#221F20"/>
-                <path d="M157 7H154V31H173V28H157V15H173V12H157V7Z" fill="white"/>
-                <path d="M178 28H197V31H178V28Z" fill="white"/>
-                <path d="M197 20H178V23H197V20Z" fill="white"/>
-                <path d="M197 12H178V15H197V12Z" fill="white"/>
-                <path d="M202 12H221V15H205V28H221V31H202V12Z" fill="white"/>
-                <path d="M228 7H225V31H228V15H244V31H247V12H228V7Z" fill="white"/>
-                </svg>
-          </div>
+          <div id="boxInnerTop"></div>
+          <div id="boxInnerMiddle"></div>
         </div>
+    <div>
+      <svg class="logo" width="256" height="38" viewBox="0 0 256 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M42 0H0V7H42V0Z" fill="#221F20" />
+        <path d="M42 15H0V22H42V15Z" fill="#221F20" />
+        <path d="M42 31H0V38H42V31Z" fill="#221F20" />
+        <path d="M57 0L69 13.2353L81 0H91L74 18.75L91 37.5H81L69 24.2647L57 37.5H47L64 18.75L47 0H57Z" fill="#221F20" />
+        <path d="M138 0H96V7H138V0Z" fill="#221F20" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M96 15H138V38H96V15ZM103 22H131V31H103V22Z" fill="#221F20" />
+        <rect x="146" width="110" height="38" fill="#221F20" />
+        <path d="M157 7H154V31H173V28H157V15H173V12H157V7Z" fill="white" />
+        <path d="M178 28H197V31H178V28Z" fill="white" />
+        <path d="M197 20H178V23H197V20Z" fill="white" />
+        <path d="M197 12H178V15H197V12Z" fill="white" />
+        <path d="M202 12H221V15H205V28H221V31H202V12Z" fill="white" />
+        <path d="M228 7H225V31H228V15H244V31H247V12H228V7Z" fill="white" />
+      </svg>
+    </div>
+
     <style>
-.logo {
-    z-index: 3;
+        .container-exa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
+
+.hero-exa {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        border: 1px solid red;
+        height: 80px;
+      }
+
+      .logo {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
       #box {
         height: 400px;
@@ -44,8 +99,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
-        animation: grow-box 1000ms ease forwards;
+        animation: grow-box 800ms ease forwards, fade-in 800ms ease;
       }
+
       @keyframes grow-box {
         from {
           width: 0;
@@ -54,14 +110,24 @@
           width: 650px;
         }
       }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
       #borderLeft {
-        border-left: 3px solid #1C1C1C;
+        border-left: 3px solid #1c1c1c;
         position: absolute;
         height: 0;
         bottom: 0;
 
-        animation: grow-left 1000ms ease 1s forwards, fade-in 500ms ease 1s forwards;
-}
+        animation: grow-left 800ms ease 800ms forwards, fade-in 800ms ease 800ms forwards;
+      }
 
       @keyframes grow-left {
         from {
@@ -74,22 +140,22 @@
         }
       }
       @keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
 
       #borderRight {
-        border-right: 3px solid #1C1C1C;
+        border-right: 3px solid #1c1c1c;
         position: absolute;
         height: 0;
         top: 0;
         right: 0;
 
-        animation: grow-right 1000ms ease 1s forwards;
+        animation: grow-right 800ms ease 800ms forwards;
       }
 
       @keyframes grow-right {
@@ -102,13 +168,13 @@
       }
 
       #borderBottom {
-        border-bottom: 3px solid #1C1C1C;
+        border-bottom: 3px solid #1c1c1c;
         position: absolute;
         width: 0;
         bottom: 0;
         right: 0;
 
-        animation: grow-bottom 1000ms ease 1s forwards;
+        animation: grow-bottom 800ms ease 800ms forwards;
       }
       @keyframes grow-bottom {
         from {
@@ -120,12 +186,12 @@
       }
 
       #borderTop {
-        border-top: 3px solid #1C1C1C;
+        border-top: 3px solid #1c1c1c;
         position: absolute;
         left: 0;
         top: 0;
         width: 0;
-        animation: grow-top 1000ms ease 1s forwards;
+        animation: grow-top 800ms ease 800ms forwards;
       }
       @keyframes grow-top {
         from {
@@ -135,12 +201,63 @@
           width: 100%;
         }
       }
+
+      #boxInnerTop {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 160px;
+        width: 100%;
+        border-top: 1px solid transparent;
+        animation: boxInnerTop 800ms ease 800ms forwards, boxInnerTopColor 800ms ease 800ms forwards;
+      }
+      @keyframes boxInnerTop {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes boxInnerTopColor {
+        from {
+          border-top: 1px solid transparent;
+        }
+        to {
+          border-top: 1px solid #1c1c1c;
+        }
+      }
+
+      #boxInnerMiddle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 80px;
+        width: 100%;
+        border-top: 1px solid transparent;
+        animation: boxInnerTop 800ms ease 800ms forwards, boxInnerTopColor 800ms ease 800ms forwards;
+      }
+      @keyframes boxInnerTop {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes boxInnerTopColor {
+        from {
+          border-top: 1px solid transparent;
+        }
+        to {
+          border-top: 1px solid #1c1c1c;
+        }
+      }
     </style>
-    </body>
-  </head>
+  </body>
 </html>
 
-    <!-- <script>
+<!-- <script>
         const borderLeft = document.getElementById("borderLeft");
         const borderRight = document.getElementById("borderRight");
         const borderTop = document.getElementById("borderTop");
