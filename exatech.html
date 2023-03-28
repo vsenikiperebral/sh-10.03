@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <body>
+        <div id="box">
+          <div id="borderLeft"></div>
+          <div id="borderRight"></div>
+          <div id="borderBottom"></div>
+          <div id="borderTop"></div>
+          <div>
+            <svg class="logo" width="256" height="38" viewBox="0 0 256 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M42 0H0V7H42V0Z" fill="#221F20"/>
+                <path d="M42 15H0V22H42V15Z" fill="#221F20"/>
+                <path d="M42 31H0V38H42V31Z" fill="#221F20"/>
+                <path d="M57 0L69 13.2353L81 0H91L74 18.75L91 37.5H81L69 24.2647L57 37.5H47L64 18.75L47 0H57Z" fill="#221F20"/>
+                <path d="M138 0H96V7H138V0Z" fill="#221F20"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M96 15H138V38H96V15ZM103 22H131V31H103V22Z" fill="#221F20"/>
+                <rect x="146" width="110" height="38" fill="#221F20"/>
+                <path d="M157 7H154V31H173V28H157V15H173V12H157V7Z" fill="white"/>
+                <path d="M178 28H197V31H178V28Z" fill="white"/>
+                <path d="M197 20H178V23H197V20Z" fill="white"/>
+                <path d="M197 12H178V15H197V12Z" fill="white"/>
+                <path d="M202 12H221V15H205V28H221V31H202V12Z" fill="white"/>
+                <path d="M228 7H225V31H228V15H244V31H247V12H228V7Z" fill="white"/>
+                </svg>
+          </div>
+        </div>
+    <style>
+.logo {
+    z-index: 3;
+}
+
+      #box {
+        height: 400px;
+        max-width: 650px;
+        margin: left auto;
+        position: relative;
+        background: #cccaca;
+        border: 30px solid #cccaca;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        animation: grow-box 1000ms ease forwards;
+      }
+      @keyframes grow-box {
+        from {
+          width: 0;
+        }
+        to {
+          width: 650px;
+        }
+      }
+      #borderLeft {
+        border-left: 3px solid #1C1C1C;
+        position: absolute;
+        height: 0;
+        bottom: 0;
+
+        animation: grow-left 1000ms ease 1s forwards, fade-in 500ms ease 1s forwards;
+}
+
+      @keyframes grow-left {
+        from {
+          height: 0;
+          opacity: 0;
+        }
+        to {
+          height: 100%;
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+      #borderRight {
+        border-right: 3px solid #1C1C1C;
+        position: absolute;
+        height: 0;
+        top: 0;
+        right: 0;
+
+        animation: grow-right 1000ms ease 1s forwards;
+      }
+
+      @keyframes grow-right {
+        from {
+          height: 0;
+        }
+        to {
+          height: 100%;
+        }
+      }
+
+      #borderBottom {
+        border-bottom: 3px solid #1C1C1C;
+        position: absolute;
+        width: 0;
+        bottom: 0;
+        right: 0;
+
+        animation: grow-bottom 1000ms ease 1s forwards;
+      }
+      @keyframes grow-bottom {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      #borderTop {
+        border-top: 3px solid #1C1C1C;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        animation: grow-top 1000ms ease 1s forwards;
+      }
+      @keyframes grow-top {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+    </body>
+  </head>
+</html>
+
+    <!-- <script>
+        const borderLeft = document.getElementById("borderLeft");
+        const borderRight = document.getElementById("borderRight");
+        const borderTop = document.getElementById("borderTop");
+let height = 0;
+let width = 0;
+
+function growLine() {
+  if (height < 100) {
+    height+=2;
+    borderLeft.style.height = `${height}%`;
+    borderRight.style.height = `${height}%`;
+    width+=2;
+    borderTop.style.width = `${width}%`;
+    borderBottom.style.width = `${width}%`;
+    requestAnimationFrame(growLine, {easing: 'ease'});
+  }
+}
+
+// function growLineTop() {
+//   if (width < 100 ) {
+//     width+=2;
+//     borderTop.style.width = `${width}%`;
+//     borderBottom.style.width = `${width}%`;
+//     requestAnimationFrame(growLineTop, {easing: 'ease'});
+//   }
+// }
+
+// growLineTop();
+growLine();
+    </script> -->
